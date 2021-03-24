@@ -1,0 +1,9 @@
+[Unit] 
+Description=Runs the weather.service 1 hour after boot up
+
+[Timer] 
+OnCalendar=hourly 
+Persistent=true 
+
+[Install] 
+WantedBy=multi-user.target
